@@ -1,10 +1,10 @@
 import { createContext, ReactNode, useReducer, useState } from 'react';
 import {
+  markCurrentCycleAsFishedAction,
   addNewCycleAction,
   interruptCurrentCycleAction,
-  markCurrentCycleAsFishedAction,
-} from '../reducers/actions';
-import { Cycle, cyclesReducer } from '../reducers/cycles';
+} from '../reducers/cycles/actions';
+import { Cycle, cyclesReducer } from '../reducers/cycles/reducers';
 
 interface CreateCycleData {
   task: string;
